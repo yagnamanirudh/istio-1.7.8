@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: v1
 name: istio-apps
 description: A Helm chart for istio 
 
