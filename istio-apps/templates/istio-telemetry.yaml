@@ -11,7 +11,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: manifests/charts/gateways/istio-telemetry/kiali
+    path: kiali
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
 --- 
@@ -28,7 +28,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: manifests/charts/gateways/istio-telemetry/mixer-telemetry
+    path: mixer-telemetry
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}    
 ---
@@ -45,7 +45,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: manifests/charts/gateways/istio-telemetry/tracing
+    path: tracing
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
 --- 
@@ -62,6 +62,6 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: manifests/charts/gateways/istio-telemetry/prometheus
+    path: prometheus
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
