@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: kiali
   namespace: istio-system
+  annotations:
+    argocd.argoproj.io/sync-wave: "-2"  
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -20,6 +22,8 @@ kind: Application
 metadata:
   name: mixer-telemetry
   namespace: istio-system
+  annotations:
+    argocd.argoproj.io/sync-wave: "-2"  
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -37,6 +41,8 @@ kind: Application
 metadata:
   name: tracing
   namespace: istio-system
+  annotations:
+    argocd.argoproj.io/sync-wave: "-2"  
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -53,7 +59,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: prometheus
-  namespace: istio-system
+  namespace: istio-
+  annotations:
+    argocd.argoproj.io/sync-wave: "-2"  
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
