@@ -3,8 +3,8 @@ kind: Application
 metadata:
   name: kiali
   namespace: istio-system
-  # finalizers:
-  # - resources-finalizer.argocd.argoproj.io
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: istio-system
@@ -20,8 +20,8 @@ kind: Application
 metadata:
   name: mixer-telemetry
   namespace: istio-system
-  # finalizers:
-  # - resources-finalizer.argocd.argoproj.io
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: istio-system
@@ -37,8 +37,8 @@ kind: Application
 metadata:
   name: tracing
   namespace: istio-system
-  # finalizers:
-  # - resources-finalizer.argocd.argoproj.io
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: istio-system
@@ -54,8 +54,8 @@ kind: Application
 metadata:
   name: prometheus
   namespace: istio-system
-  # finalizers:
-  # - resources-finalizer.argocd.argoproj.io
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: istio-system
