@@ -4,9 +4,9 @@ metadata:
   name: istio-ingressgateway
   namespace: istio-system
   annotations:
-    argocd.argoproj.io/sync-wave: "1"  
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
+    argocd.argoproj.io/sync-wave: "1"
+  # finalizers:
+  # - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: istio-system
